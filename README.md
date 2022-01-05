@@ -1,1 +1,0 @@
-# synkinn.github.io
