@@ -1,0 +1,32 @@
+
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+
+<canvas id = "canvasId" width = "800" height = "400" style = "background-color:#AAAAFF;"></canvas>
+
+<script>
+canvas = document.getElementById("canvasId");
+ctx = canvas.getContext("2d");
+fps = 60;
+
+window.onload = function(){requestAnimationFrame(loop);}
+function loop(){
+	setTimeout(function(){
+		ctx.clearRect(0,0,canvas.width,canvas.height);
+		scene();
+		requestAnimationFrame(loop);
+	},1000/fps)
+}
+
+
+
+
+</script>
+<script src = "sprite.js"></script>
+<script src = "drawfunc.js"></script>
+<script src = "items.js"></script>
+<script src = "scenes.js"></script>
+<script src = "input.js"></script>
+<script src = "vars.js"></script>
+<script src = "losscheck.js"></script>
