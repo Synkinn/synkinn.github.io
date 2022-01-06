@@ -1,0 +1,41 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/main.css">
+<title>WELCOME</title>
+</head>
+<center>
+<div class = "grid"  >
+		<div class = "border wide"><div class = "gridElement" height = "450" style = "background-color:#8888BB;"><center><img src = "imgs/img.jpg" class = "gridElement img"></img></center><center style = "padding: 10px;">WELCOME</center></div></div>
+		<div  class = "border" ><div id = "a"  class = "gridElement"><center>Music</center></div> </div>
+		<div class = "border"><div id = "b" class = "gridElement"><center>Drawing</center></div> </div>
+		<div class = "border"><div id = "c" class = "gridElement"><center>Games</center></div> </div>
+		<div class = "border"><div id = "d" class = "gridElement"><center>Info</center></div> </div>
+		<div class = "border wide"><div class = "gridElement" height = "40px" style = "background-color:#8888BB;"><center>---Charlie---</center></div></div>
+</div >
+</center>
+
+
+<script>
+
+
+
+boxes = ["a","b","c","d"];
+n = [];
+
+for (let i = 0; i < boxes.length; i++){
+	n[i] = document.getElementById(boxes[i]);
+	n[i].onmouseover = function(){
+		n[i].style = 'background-color: #8888BB';
+	}
+	n[i].onmouseout = function(){
+		n[i].style = 'background-color: rgba(200,200,255,0.5)';
+	}
+}
+
+n[0].onclick = function(){window.location = "html/music.html"}
+n[1].onclick = function(){window.location = "html/drawing.html"}
+n[2].onclick = function(){window.location = "html/games.html"}
+n[3].onclick = function(){window.location = "html/info.html"}
+
+</script>
+</html>
