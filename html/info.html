@@ -1,0 +1,32 @@
+<head>
+<link rel="stylesheet" href="../css/main.css">
+<title>Info</title>
+</head>
+<div class = "grid"  >
+<div class = "border wide"><div class = "gridElement" height = "40px" style = "background-color:#8888BB;"><center>INFO </center></div></div>
+<div class = "border wide"><div id = "a" class = "gridElement"><div class = "para">  <==== BACK <====</div></div> </div>
+<div class = "border wide"><div class = "gridElement para" height = "40px" style = "background-color:#8888BB;">Welcome To My Website :) <br> I don't really know why this exists... <img width = "100%" src = "../imgs/walk.gif"/></div></div>
+<div class = "border wide"><div id = "b" class = "gridElement"><div class = "para">  <==== BACK <====</div></div> </div>
+</div>
+
+<script>
+
+
+
+boxes = ["a","b"];
+n = [];
+
+for (let i = 0; i < boxes.length; i++){
+	n[i] = document.getElementById(boxes[i]);
+	n[i].onmouseover = function(){
+		n[i].style = 'background-color: #8888BB';
+	}
+	n[i].onmouseout = function(){
+		n[i].style = 'background-color: rgba(200,200,255,0.5)';
+	}
+}
+
+n[0].onclick = function(){window.location = "../index.html"}
+n[1].onclick = function(){window.location = "../index.html"}
+
+</script>
